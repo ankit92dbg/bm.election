@@ -188,7 +188,7 @@ $endPart = explode('.',$endPart);
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo ($endPart[0]=='voters') ? 'active' : ''; ?>" href="leaders.php">
+          <a class="nav-link <?php echo ($endPart[0]=='compaign' || $endPart[0]=='add-compaign') ? 'active' : ''; ?>" href="compaign.php">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa fa-volume-up text-warning text-sm opacity-10" style="color:#17ce02 !important;"></i>
             </div>
@@ -196,7 +196,7 @@ $endPart = explode('.',$endPart);
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo ($endPart[0]=='voters') ? 'active' : ''; ?>" href="leaders.php">
+          <a class="nav-link <?php echo ($endPart[0]=='social-media' || $endPart[0]=='add-social-media') ? 'active' : ''; ?>" href="social-media.php">
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="fa fa-twitter text-warning text-sm opacity-10" style="color:#02a5d5 !important;"></i>
             </div>
