@@ -1,3 +1,6 @@
+<?php
+    error_reporting(E_ALL);
+?>
 <?php include('common/head.php'); ?>
 <body class="">
   <main class="main-content  mt-0">
