@@ -281,7 +281,7 @@ $breadCrumbName = "Profile";
         $('#overlay').show()
         $(".prof-image").attr("src","../assets/img/dummy-user.jpg");
            $.ajax({  
-                url:"../ajax/leader/master-data.php",  
+                url:"../ajax/master-data.php",  
                 method:"POST",  
                 data:{action:"user_data",user_id:"<?php echo $_SESSION['user_id']; ?>"},  
                 success:function(data){  
@@ -329,7 +329,7 @@ $breadCrumbName = "Profile";
       {  
         $('#overlay').show()
            $.ajax({  
-                url:"../ajax/leader/master-data.php",  
+                url:"../ajax/master-data.php",  
                 method:"POST",  
                 data:{state:val},   
                 success:function(data){  
