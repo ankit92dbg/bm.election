@@ -510,6 +510,24 @@ $breadCrumbName = "Edit Voter";
                         </div>
                     </div>
                     <div class="col-4">
+                        <div class="mb-3">
+                            <label class="label">APPROACH QTY</label>
+                            <input type="number" id="APPROACH_QTY" name="APPROACH_QTY" class="form-control form-control-lg" placeholder="APPROACH QTY" aria-label="Password" >
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label class="label">APPROACH REASON</label>
+                            <input type="text" id="APPROACH_REASON" name="APPROACH_REASON" class="form-control form-control-lg" placeholder="APPROACH REASON" aria-label="Password" >
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label class="label">CANDIDATE LIKE</label>
+                            <input type="text" id="CANDIDATE_NAME" name="CANDIDATE_NAME" class="form-control form-control-lg" placeholder="CANDIDATE NAME" aria-label="Password" >
+                        </div>
+                    </div>
+                    <div class="col-4">
                         <button type="submit" id="loginBtn" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Submit</button>
                     </div>
                     <div class="col-4">
@@ -669,6 +687,13 @@ $breadCrumbName = "Edit Voter";
                     $('#SLNOINPART').html(option_SLNOINPART_no)
                     $('#SECTION_NO').html(option_section_no)
                     $('#AC_NO').html(option)
+
+                    $('#APPROACH_QTY').val(data.voterData.approach_time)
+                    $('#APPROACH_REASON').val(data.voterData.approach_reason)
+                    $('#CANDIDATE_NAME').val(data.voterData.candidate_name)
+
+
+
                     $('#C_HOUSE_NO').val(data.voterData.C_HOUSE_NO)
                     $('#C_HOUSE_NO_V1').val(data.voterData.C_HOUSE_NO_V1)
                     $('#FM_NAME_EN').val(data.voterData.FM_NAME_EN)
